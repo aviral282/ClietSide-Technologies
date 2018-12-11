@@ -1,0 +1,259 @@
+html{
+    background-color: #2f2f2f;
+}
+
+
+.item6{grid-area:myarea;
+}
+
+
+.main-head {
+  grid-area: header;
+   background-color: #0b0c10;
+    font-size: 20px;
+    color: #66fcf1;
+}
+
+
+/*
+
+
+#85DCB head
+#41b3a3 main
+#e8a87c sidebar
+#e27d60 adv
+#41b3a3 nav
+#85DCB foot
+
+*/
+.content {
+  grid-area: content;
+     background-color:#116466;
+    padding: 10px;
+    
+}
+
+.main-nav {
+  grid-area: nav;
+     background-color: #1f2833;
+    font-style: italic;
+}
+.side {
+  grid-area: sidebar;
+     background-color: #1f2833;
+    padding: 15px;
+    color: #66fcf1;
+}
+
+.ad {
+  grid-area: ad;
+     background-color: #1f2833;
+    padding: 15px;
+    color: #66fcf1;
+}
+.main-footer {
+  grid-area: footer;
+     background-color: #0b0c10;
+    color: #66fcf1;
+    padding: 5px;
+    text-align: center;
+}
+
+img{
+    float: left;
+    width: 25%;
+  
+}
+
+ol{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+ol li{
+   float: left;
+}
+ol li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    width: 60px;
+}
+ol li a:hover {
+    background-color: #111;
+}
+
+ul li a{
+    color: #66fcf1;
+    font-size: 20px;
+}
+
+#paraHead{
+    text-align: center;
+}
+
+#imageid{    padding: 9px;
+    margin-bottom: 16px;
+    margin-top: -58px;}
+
+/* mobile*/
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+    font: 10px;
+  grid-template-areas:
+    "myarea"
+    "header"
+    "nav"
+    "content"
+    "sidebar"
+    "ad"
+    "footer";
+}
+
+/* media 1*/
+@media (min-width: 550px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+      "myarea myarea"
+      "header  header"
+      "nav     nav"
+      "sidebar content"
+      "ad      footer";
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* media 2*/
+@media (min-width: 720px) {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+      "myarea myarea myarea" 
+      "header header  header"
+      "nav content sidebar"
+      "nav  content ad"
+      "footer footer footer"
+   }
+   nav ul {
+     flex-direction: column;
+   }
+}
+
+h3{
+    color: #66fcf1;
+}
+
+
+/* calculator*/
+/*  calculator*/
+
+
+.box {
+  background-color: #1f2833;
+  color: #fff;
+  border-radius: 29px;
+  padding: 10px;
+  font-size: 196%; 
+  width: 450px;
+margin: auto;
+}
+
+.header,
+.footer {
+  background-color: #999;
+}
+
+.sidebar2 {
+  background-color: #ccc;
+  color: #444;
+}
+
+
+.keys {
+        position: relative;
+        top: 15px;
+    }
+ 
+.button {
+        font-size: 35px;
+        width: 88px;
+        height: 58px;
+        border: none;
+        border-radius: 50px;
+        margin-left: 17px;
+        cursor: pointer;
+        border-top: 2px solid transparent;
+    }
+ 
+        .button.gray {
+            color: white;
+            background-color: #6f6f6f;
+            border-bottom: black 2px solid;
+            border-top: 2px #6f6f6f solid;
+        }
+ 
+        .button.pink {
+            color: black;
+            background-color: #479761;
+            border-bottom: black 2px solid;
+        }
+ 
+        .button.black {
+            color: #afd275;
+            background-color: #222629;
+            border-bottom: black 2px solid;
+            border-top: 2px 303030 solid;
+        }
+ 
+        .button.orange {
+            color: black;
+            background-color: FF9933;
+            border-bottom: black 2px solid;
+            border-top: 2px FF9933 solid;
+            width: 413px;
+        }
+ 
+    .gray:active {
+        border-top: black 2px solid;
+        border-bottom: 2px #6f6f6f solid;
+    }
+ 
+    .pink:active {
+        border-top: black 2px solid;
+        border-bottom: #ff4561 2px solid;
+    }
+ 
+    .black:active {
+        border-top: black 2px solid;
+        border-bottom: #303030 2px solid;
+    }
+ 
+    .orange:active {
+        border-top: black 2px solid;
+        border-bottom: FF9933 2px solid;
+    }
+ 
+  
+.label{
+    width: 444px;
+    height: 58px;
+    background-color: #0b0c10;
+    font-size: 54px;
+    box-sizing: border-box;
+    border: 2px solid #c5c6c7;
+    color: #66fcf1;
+    border-radius: 20px;
+    text-align: right;
+}
+
+
